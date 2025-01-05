@@ -13,13 +13,13 @@ A comprehensive system for managing student details, courses, modules, and exam 
 ## Technologies
 - Backend: Node.js, Express, Sequelize (MySQL)
 - Frontend: Angular
-- Database: MySQL
+- Database: PostgreSQL
 
 ## Installation
 
 ### Prerequisites
 - Node.js (v16+)
-- MySQL (v8+)
+- PostgreSQL (v12+)
 - Angular CLI (v15+)
 
 ### Backend Setup
@@ -30,9 +30,9 @@ A comprehensive system for managing student details, courses, modules, and exam 
    npm install
    ```
 3. Create a `.env` file based on `.env.example`
-4. Set up MySQL database:
+4. Set up PostgreSQL database:
    ```bash
-   mysql -u root -p
+   psql -u root -p
    CREATE DATABASE student_management;
    ```
 5. Run migrations:

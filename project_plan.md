@@ -47,7 +47,7 @@
 
 ## Dependencies
 - Node.js v16+
-- MySQL 8+
+- PostgreSQL 12+
 - Angular 15+
 - Sequelize 6+
 - ExcelJS (for report generation)
