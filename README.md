@@ -11,7 +11,7 @@ A comprehensive system for managing student details, courses, modules, and exam 
 - Angular-based frontend
 
 ## Technologies
-- Backend: Node.js, Express, Sequelize (MySQL)
+- Backend: Node.js, Express, Sequelize
 - Frontend: Angular
 - Database: PostgreSQL
 
@@ -24,12 +24,18 @@ A comprehensive system for managing student details, courses, modules, and exam 
 
 ### Backend Setup
 1. Clone the repository
+   ```bash
+   git clone --recursive https://github.com/your-username/student-management-system.git
+   ```
 2. Install dependencies:
    ```bash
    cd backend
    npm install
    ```
 3. Create a `.env` file based on `.env.example`
+   ```bash
+   cp ../.env.example .env
+   ```
 4. Set up PostgreSQL database:
    ```bash
    psql -u root -p
@@ -47,6 +53,7 @@ A comprehensive system for managing student details, courses, modules, and exam 
 ### Frontend Setup
 1. Navigate to frontend directory:
    ```bash
+   cd ..
    cd frontend
    ```
 2. Install dependencies:
@@ -55,7 +62,7 @@ A comprehensive system for managing student details, courses, modules, and exam 
    ```
 3. Start the development server:
    ```bash
-   ng serve
+   npm start
    ```
 
 ## API Documentation
@@ -79,18 +86,6 @@ A comprehensive system for managing student details, courses, modules, and exam 
 - `GET /api/results/student/:id` - Get results by student ID
 - `GET /api/results/export` - Export results to Excel
 
-## Running the Application
-1. Start backend server:
-   ```bash
-   cd backend
-   npm start
-   ```
-2. Start frontend development server:
-   ```bash
-   cd frontend
-   ng serve
-   ```
-3. Access the application at `http://localhost:4200`
-
 ## License
 MIT License
+
